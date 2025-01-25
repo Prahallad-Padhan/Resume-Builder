@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Resume Builder</title>
+</head>
+
+<body>
+    <header>
+        <h1>Resume Builder</h1>
+    </header>
+    <main>
+        <section id="form-section">
+            <h2>Enter your details</h2>
+            <form id="resume-form">
+                <!--this is the mai section-->
+                <label for="photo">Photo:</label>
+                <input type="file" id="photo" name="photo" accept="image/*">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name here" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email here" required>
+                <label for="phone">Phone:</label>
+                <input type="number" id="phone" name="phone" placeholder="Enter your phone number here" required>
+                <label for="summary">Summary:</label>
+                <textarea id="summary" name="summary" placeholder="Enter your summary here" required></textarea>
+                <label for="education">Education:</label>
+                <textarea id="education" name="education" placeholder="Enter your education here" required></textarea>
+                <label for="experience">Experience:</label>
+                <textarea id="experience" name="experience" placeholder="Enter your experience here"
+                    required></textarea>
+                <label for="skills">Skills:</label>
+                <textarea id="skills" name="skills" placeholder="Enter your skills here" required></textarea>
+                <!--button-->
+                <button type="submit" id="generate-resume">Generate Resume</button>
+                <button type="button" id="print-resume">Print Resume</button>
+
+
+            </form>
+        </section>
+        <section id="resume-preview"></section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
